@@ -2,19 +2,22 @@
 
 ## Alexander Zotov
 
-### Bullet Hell with Simple Object Pooling System
+### 1. Bullet Hell with Simple Object Pooling System
 
 https://www.youtube.com/watch?v=Mq2zYk5tW_E
 
 - Prefab + Object Pool
 - 最簡單的方式
 
+### 2. Double Spiral Pattern
+
 https://www.youtube.com/watch?v=5dlEl_G713A
+
 https://www.youtube.com/watch?v=1aGjMIUgVTU
 
 ## Jongallant
 
-### Unity-Bullet-Hell
+### 1. Unity-Bullet-Hell
 
 https://github.com/jongallant/Unity-Bullet-Hell
 
