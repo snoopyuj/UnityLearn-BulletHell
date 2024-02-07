@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace AlexanderZotov
 {
-    public class DoubleSpiral : MonoBehaviour
+    public class FireDoubleSpiral : MonoBehaviour
     {
         private float angle = 0f;
         private Vector2 bulletMoveDirection = Vector2.zero;

@@ -9,11 +9,13 @@ https://www.youtube.com/watch?v=Mq2zYk5tW_E
 - Prefab + Object Pool
 - 最簡單的方式
 
-### 2. Double Spiral Pattern
-
-https://www.youtube.com/watch?v=5dlEl_G713A
+### 2. Spiral Pattern
 
 https://www.youtube.com/watch?v=1aGjMIUgVTU
+
+### 3. Double Spiral Pattern
+
+https://www.youtube.com/watch?v=5dlEl_G713A
 
 ## Jongallant
 
