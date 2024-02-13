@@ -1,35 +1,38 @@
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+namespace StephenHubbard
 {
-    [SerializeField]
-    private float lifeTime = 5f;
-
-    private float moveSpeed = 0f;
-    private Transform trans = null;
-
-    public void SetMoveSpeed(float speed)
+    public class Projectile : MonoBehaviour
     {
-        moveSpeed = speed;
-    }   
+        [SerializeField]
+        private float lifeTime = 5f;
 
-    private void Awake()
-    {
-        trans = transform;
-    }
+        private float moveSpeed = 0f;
+        private Transform trans = null;
 
-    private void Start()
-    {
-        Destroy(gameObject, lifeTime);
-    }   
+        public void SetMoveSpeed(float speed)
+        {
+            moveSpeed = speed;
+        }
 
-    private void Update()
-    {
-        MoveProjectile();
-    }
+        private void Awake()
+        {
+            trans = transform;
+        }
 
-    private void MoveProjectile()
-    {
-        trans.position += moveSpeed * Time.deltaTime * trans.right;
+        private void Start()
+        {
+            Destroy(gameObject, lifeTime);
+        }
+
+        private void Update()
+        {
+            MoveProjectile();
+        }
+
+        private void MoveProjectile()
+        {
+            trans.position += moveSpeed * Time.deltaTime * trans.right;
+        }
     }
 }

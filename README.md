@@ -19,9 +19,23 @@ https://www.youtube.com/watch?v=1aGjMIUgVTU
 
 https://www.youtube.com/watch?v=5dlEl_G713A
 
+---
+
+## Stephen Hubbard
+
+### Unity 2D Top Down Bullet Hell Tutorial
+
+https://youtu.be/OxDMHn1o0LA?si=7UfdvtNK3InL1uQ6
+
+- Shooter Bursts
+- Cone Of Influence
+- Oscillate & Stagger
+
+---
+
 ## Jongallant
 
-### 1. Unity-Bullet-Hell
+### Unity-Bullet-Hell
 
 https://github.com/jongallant/Unity-Bullet-Hell
 
@@ -32,12 +46,6 @@ https://github.com/jongallant/Unity-Bullet-Hell
 - 自定義 Projectile Mesh
 - 自定義 Shape Template
 - One draw call
-
-## Stephen Hubbard
-
-### 1. Unity 2D Top Down Bullet Hell Tutorial
-
-https://youtu.be/OxDMHn1o0LA?si=7UfdvtNK3InL1uQ6
 
 https://youtu.be/YNJM7rWbbxY?si=J8nyLFUYGEH18jbQ
 

@@ -1,26 +1,37 @@
 using UnityEngine;
 
-public class MouseFollower : MonoBehaviour
+namespace StephenHubbard
 {
-    [SerializeField]
-    private float lerpRatio = 0.1f;
-
-    private Transform trans = null;
-    private Camera cam = null;
-
-    private void Awake()
+    public class MouseFollower : MonoBehaviour
     {
-        trans = transform;
-        cam = Camera.main;
-    }
+        [SerializeField]
+        private float lerpRatio = 0.1f;
 
-    private void Update()
-    {
-        var oriPos = trans.position;
-        var newPos = Vector3.Lerp(trans.position, cam.ScreenToWorldPoint(Input.mousePosition), lerpRatio);
+        private Transform trans = null;
+        private Camera cam = null;
 
-        newPos.z = oriPos.z;
+        private void Awake()
+        {
+            trans = transform;
+            cam = Camera.main;
 
-        trans.position = newPos;
+            Invoke(nameof(EnableMono), 3f);
+            enabled = false;
+        }
+
+        private void Update()
+        {
+            var oriPos = trans.position;
+            var newPos = Vector3.Lerp(trans.position, cam.ScreenToWorldPoint(Input.mousePosition), lerpRatio);
+
+            newPos.z = oriPos.z;
+
+            trans.position = newPos;
+        }
+
+        private void EnableMono()
+        {
+            enabled = true;
+        }
     }
 }
