@@ -33,20 +33,25 @@ https://youtu.be/OxDMHn1o0LA?si=7UfdvtNK3InL1uQ6
 
 ---
 
+## Maieron
+
+### How to Make a Bullet Hell Engine in Unity Using Particles (Tutorial)
+
+https://youtu.be/46TqkhJu7uA?si=tXLBmVZJdP8aNdpU
+
+- Particle System
+
+---
+
 ## Jongallant
 
 ### Unity-Bullet-Hell
 
 https://github.com/jongallant/Unity-Bullet-Hell
 
-- Graphics.DrawMeshInstancedIndirect
-- Pool
-- Custom calculate collision
-- 子 class 實作 FireProjectile, UpdateProjectile
-- 自定義 Projectile Mesh
-- 自定義 Shape Template
-- One draw call
-
-https://youtu.be/YNJM7rWbbxY?si=J8nyLFUYGEH18jbQ
-
-https://youtu.be/46TqkhJu7uA?si=tXLBmVZJdP8aNdpU
+- Use `Graphics.DrawMeshInstancedIndirect()`
+- Requires collision detection calculations
+- Subclass implementation of `FireProjectile()`, `UpdateProjectile()`
+- Custom projectile mesh
+- Custom shape template
+- Achieves one draw call
