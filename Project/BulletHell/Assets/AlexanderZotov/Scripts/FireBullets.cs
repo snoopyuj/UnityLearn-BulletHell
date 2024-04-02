@@ -22,12 +22,12 @@ namespace AlexanderZotov
 
         private void Fire()
         {
-            var angleStep = (endAngle - startAngle) / bulletsAmount;
-            var angle = startAngle;
+            var angleStep = (endAngle - startAngle) / (bulletsAmount - 1);
             var trans = transform;
 
-            for (var i = 0; i < bulletsAmount + 1; ++i)
+            for (var i = 0; i < bulletsAmount; ++i)
             {
+                var angle = startAngle + (angleStep * i);
                 var bulDirX = trans.position.x + Mathf.Sin((angle * Mathf.PI) / 180f);
                 var bulDirY = trans.position.y + Mathf.Cos((angle * Mathf.PI) / 180f);
                 var bulMoveVector = new Vector3(bulDirX, bulDirY, 0f);
@@ -37,8 +37,6 @@ namespace AlexanderZotov
                 bul.transform.SetPositionAndRotation(trans.position, trans.rotation);
                 bul.SetActive(true);
                 bul.GetComponent<Bullet>().SetMoveDirection(bulDir);
-
-                angle += angleStep;
             }
         }
     }
